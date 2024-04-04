@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type= "text/css" href="css/style.css">
+    <link rel="stylesheet" type= "text/css" href="css/accordion.css">
+    <link rel="stylesheet" type= "text/css" href="css/itc-slider.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+</head>
+<body>
+  <header class="d-flex justify-content-center py-3">
+  <ul class="nav nav-pills">
+    <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
+    <li class="nav-item"><a href="#" class="nav-link">Features</a></li>
+    <li class="nav-item"><a href="#" class="nav-link">Pricing</a></li>
+    <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
+    <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+  </ul>
+</header>
+    <header class="header">
+      <div class="container">
+        <nav class="nav">
+          <div id="time"></div>
+          <h3 class="logo">A.I cakes</h3>
+          <ul class="nav_list">
+            <li class="nav_item"> <a href="" class="nav_link"> cakes </a></li>
+            <li class="nav_item"> <a href="" class="nav_link"> decorations </a></li>
+            <li class="nav_item"> <a href="" class="nav_link"> wedding cakes </a></li>
+            <li class="nav_item"> <a href="" class="nav_link"> most popular </a></li>
+            <li class="nav_item"> <a href="" class="nav_link"> contacts </a></li>
+          </ul> 
+        <div class="burger" onclick="burgerClick()">
+        <div class="burger_line burger_line1"></div>
+        <div class="burger_line burger_line2"></div>
+        <div class="burger_line burger_line3"></div>
+      </div>
+      </div>
+     
+      </nav>
+      
+    <button class="btn-menu">Menu</button>
+    <div class="menu is-active"> <p>content</p>
+      <h4 class="themes_title">theme</h4>
+      <ul class="theme_list">
+        <li class="themes_item">
+          <div class="dark" onclick="dark()" ></div>
+          <div class="light" onclick="light()"></div>
+        </li>
+      </ul>
+    </div>
+
+    </header>
+    <main class="main">
+      <section class="cards">
+        <div class="container">
+          <div class="card text-center">
+            <div class="card-header">
+              Featured
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">A.I.cakes</h5>
+              <p class="card-text">we deliver cakes around the uk to any buyers</p>
+              <a href="#" class="btn btn-primary">click here</a>
+            </div>
+            <div class="card-footer text-muted">
+              thanks for shopping
+            </div>
+          </div>
+          <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card h-100">
+                <img src="wedd.jpeg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">wedding cake </h5>
+                  <p class="card-text">this is our most famous wedding cake </p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted"></small>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">birthday cake</h5>
+                  <p class="card-text">customise your cake to fit the birthday</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted"></small>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100">
+                <img src="..." class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">bento cake</h5>
+                  <p class="card-text">little mini cakes for any accasion</p>
+                </div>
+                <div class="card-footer">
+                  <small class="text-muted"></small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+        <section class="shop">
+            <div class="container"data-slider="itc-slider">
+             <h1 class="shop_title">cakes</h1>
+             <div class="itc-slider">
+                 <div class="itc-slider-wrapper">
+                   <div class="itc-slider-items">
+                     <div class="itc-slider-item">
+                       <!-- Контент 1 слайда -->
+                       <img src="img/he.jpeg" class="shop_img">
+                     </div>
+                     <div class="itc-slider-item">
+                       <!-- Контент 2 слайда -->
+                     </div>
+                     <div class="itc-slider-item">
+                       <!-- Контент 3 слайда -->
+                     </div>
+                   </div>
+                 </div>
+                 <!-- Кнопки для перехода к предыдущему и следующему слайду -->
+                 <button class="itc-slider-btn itc-slider-btn-prev"></button>
+                 <button class="itc-slider-btn itc-slider-btn-next"></button>
+               </div>
+
+               <div class="accordion" id="accordion-1">
+                <div class="accordion__item">
+                 <div class="accordion__header">
+                   О товаре:
+                 </div>
+                  <div class="accordion__body">
+                    <p class="shop_text">наши торты сделаны из органических ингредиентов. они требуют времени и в конце становятся потрясающими, они очень вкусные и не похожи ни на что, что вы могли себе представить раньше</p>
+                  </div>
+                </div>
+                <div class="accordion__item">
+                    <div class="accordion__header">
+                      цена
+                    </div>
+                      <div class="accordion__body">
+                        <p class="shop_price">2 500£</p>
+                        <button class="shop_btn" id="btn" onclick="buy()">buy</button>
+                      </div>
+                </div>
+              </div>
+            
+           
+            </div>
+         </section>
+         <section class="maps">
+           <div class="container">
+            <div class="google">
+              <h2 class="google_title">Google-maps</h2>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2488.571463456657!2d-0.30794192502937556!3d51.41092831774842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48760b9538371339%3A0xff6b8f9b3c077881!2sBentalls%20Shopping%20Centre%2C%201%20Clarence%20St%2C%20Kingston%20upon%20Thames%20KT1%201TP!5e0!3m2!1sen!2suk!4v1699550591471!5m2!1sen!2suk" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+              </iframe>
+
+            </div>
+            <div class="yandex">
+              <h2 class="yandex_title">яндекс-карта</h2>
+              <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A0546c8b03b4a9ab8ab117e23adf3f31d22e58b4feabf0c76d6cdc184dadf78c2&amp;source=constructor" width="500" height="400" frameborder="0">
+              </iframe>
+              
+            </div>
+
+           </div>
+         </section>
+         <section class="video">
+         <video id="myVideo"  autoplay muted loop>
+          <source src="video/cakes1.mp4" type="video/mp4">
+         </video>
+         <div class="video_content">
+          <div class="container">
+            <h2 class="video_title">торты</h2>
+            <p class="video_text"> наши торты очень хорошие</p>
+            <button id="play" class="video_btn" onclick="play()"> pause </button>
+            <button id="mute" class="video_btn" onclick="mute()"> mute </button>
+            <button id="next" class="video_btn" onclick="next()"> next </button>
+            <button id="prev" class="video_btn" onclick="previous()"> prev </button>
+          </div>
+         </div>
+        </section>
+        <button class="basket" id="basket">
+          <a href="basket.html">
+            <img src="img/basket.png" class="basket_img">
+            <p class="price">0</p>
+          </a>
+        </button>
+    </main>
+    <footer class="footer">
+      <div class="container">
+      <p class="footer_text"> everything is protected 2024</p>
+        </div>
+    </footer>
+    <section class="clock">
+      <div class="container_clock">
+      
+      </div>
+    </section>
+
+    <script src="scripts/video.js"></script>
+    <script src="scripts/time.js"></script>
+    <script src="scripts/burger.js"></script>
+    <script src="scripts/themes.js"></script>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/accordion.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/itc-slider.js"></script>
+    <script src="scripts/bootstrap.js"></script>
+</body>
+</html>
+

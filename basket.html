@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type= "text/css" href="css/style.css">
+    <link rel="stylesheet" type= "text/css" href="css/accordion.css">
+    <link rel="stylesheet" type= "text/css" href="css/itc-slider.css">
+</head>
+<body>
+    <header class="header">
+      <div class="container">
+        <nav class="nav">
+          <div id="time"></div>
+          <h3 class="logo">A.I cakes</h3>
+          <ul class="nav_list">
+            <li class="nav_item"> <a href="" class="nav_link"> cakes </a></li>
+            <li class="nav_item"> <a href="" class="nav_link"> decorations </a></li>
+            <li class="nav_item"> <a href="" class="nav_link"> wedding cakes </a></li>
+            <li class="nav_item"> <a href="" class="nav_link"> most popular </a></li>
+            <li class="nav_item"> <a href="" class="nav_link"> contacts </a></li>
+          </ul> 
+        <div class="burger" onclick="burgerClick()">
+        <div class="burger_line burger_line1"></div>
+        <div class="burger_line burger_line2"></div>
+        <div class="burger_line burger_line3"></div>
+      </div>
+      </div>
+     
+      </nav>
+      
+    <button class="btn-menu">Menu</button>
+    <div class="menu is-active"> <p>content</p>
+      <h4 class="themes_title">theme</h4>
+      <ul class="theme_list">
+        <li class="themes_item">
+          <div class="dark" onclick="dark()" ></div>
+          <div class="light" onclick="light()"></div>
+        </li>
+      </ul>
+    </div>
+
+    </header>
+    <main>
+        <section class="gds">
+           <div class="container container_gds">
+            <h2 class="gds_title">basket</h2>
+            <ul class="gds_list">
+              <li class="gds_item">
+                <p class="gds_text"> your basket is empty  </p>
+              </li>
+            </ul>
+            <button class="gds_btn" onclick="update()" > add product</button>
+           </div>
+        </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+      <p class="footer_text"> everything is protected 2024</p>
+        </div>
+    </footer>
+    <section class="clock">
+      <div class="container_clock">
+      
+      </div>
+    </section>
+
+    <script src="scripts/video.js"></script>
+    <script src="scripts/basket.js"></script>
+    <script src="scripts/time.js"></script>
+    <script src="scripts/burger.js"></script>
+    <script src="scripts/themes.js"></script>
+    <script src="scripts/menu.js"></script>
+    <script src="scripts/accordion.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/itc-slider.js"></script>
+</body>
+</html>
+
